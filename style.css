@@ -91,34 +91,33 @@ nav a:hover {
     left: 0;
     right: 0;
     bottom: 0;
-    background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400"><g fill="white" opacity="0.1"><path d="M50 200 Q60 180 70 200 Q80 220 90 200" stroke="white" stroke-width="2" fill="none"/><circle cx="55" cy="185" r="3"/><path d="M150 180 L160 200 L170 180 M160 200 L160 220" stroke="white" stroke-width="2" fill="none"/><circle cx="160" cy="175" r="3"/><path d="M250 200 Q240 180 230 200 L240 220 L250 200" stroke="white" stroke-width="2" fill="none"/><circle cx="240" cy="175" r="3"/><path d="M350 190 Q340 170 330 190 Q320 210 310 190" stroke="white" stroke-width="2" fill="none"/><circle cx="340" cy="165" r="3"/></g></svg>');
-    opacity: 0.2;
-    animation: yogaFloat 20s ease-in-out infinite;
+    background-image: 
+        radial-gradient(circle at 20% 30%, rgba(255,255,255,0.3) 2px, transparent 2px),
+        radial-gradient(circle at 80% 70%, rgba(255,255,255,0.2) 3px, transparent 3px),
+        radial-gradient(circle at 60% 20%, rgba(255,255,255,0.25) 2px, transparent 2px),
+        radial-gradient(circle at 30% 80%, rgba(255,255,255,0.2) 2px, transparent 2px);
+    background-size: 100px 100px, 150px 150px, 120px 120px, 80px 80px;
+    animation: yogaFloat 15s ease-in-out infinite;
 }
 
 .hero::after {
-    content: '';
+    content: '🧘‍♀️';
     position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300"><g fill="white" opacity="0.08"><path d="M80 150 Q90 130 100 150 L110 170 Q100 180 90 170 Z" stroke="white" stroke-width="2" fill="none"/><circle cx="95" cy="125" r="4"/><path d="M200 140 L210 160 Q220 150 230 160 L220 180 Q210 170 200 180" stroke="white" stroke-width="2" fill="none"/><circle cx="215" cy="135" r="4"/></g></svg>');
-    opacity: 0.15;
-    animation: yogaFloat2 25s ease-in-out infinite reverse;
+    top: 20%;
+    right: 10%;
+    font-size: 3rem;
+    opacity: 0.3;
+    animation: yogaFloat2 20s ease-in-out infinite;
 }
 
 @keyframes yogaFloat {
-    0%, 100% { transform: translateY(0px) rotate(0deg); }
-    25% { transform: translateY(-10px) rotate(1deg); }
-    50% { transform: translateY(-5px) rotate(-1deg); }
-    75% { transform: translateY(-15px) rotate(0.5deg); }
+    0%, 100% { transform: translateY(0px); }
+    50% { transform: translateY(-20px); }
 }
 
 @keyframes yogaFloat2 {
-    0%, 100% { transform: translateX(0px) translateY(0px); }
-    33% { transform: translateX(10px) translateY(-8px); }
-    66% { transform: translateX(-5px) translateY(-12px); }
+    0%, 100% { transform: translateY(0px) rotate(0deg); }
+    50% { transform: translateY(-30px) rotate(10deg); }
 }
 
 .hero-content {
