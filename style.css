@@ -101,13 +101,46 @@ nav a:hover {
 }
 
 .hero::after {
-    content: '🧘‍♀️';
+    content: '';
     position: absolute;
-    top: 20%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    pointer-events: none;
+}
+
+.yoga-quote {
+    position: absolute;
+    color: rgba(255,255,255,0.7);
+    font-size: 1.2rem;
+    font-style: italic;
+    opacity: 0;
+    animation: quoteFloat 8s ease-in-out infinite;
+}
+
+.yoga-quote:nth-child(1) {
+    top: 15%;
+    left: 10%;
+    animation-delay: 0s;
+}
+
+.yoga-quote:nth-child(2) {
+    top: 25%;
+    right: 15%;
+    animation-delay: 3s;
+}
+
+.yoga-quote:nth-child(3) {
+    bottom: 30%;
+    left: 20%;
+    animation-delay: 6s;
+}
+
+.yoga-quote:nth-child(4) {
+    bottom: 20%;
     right: 10%;
-    font-size: 3rem;
-    opacity: 0.3;
-    animation: yogaFloat2 20s ease-in-out infinite;
+    animation-delay: 9s;
 }
 
 @keyframes yogaFloat {
@@ -118,6 +151,11 @@ nav a:hover {
 @keyframes yogaFloat2 {
     0%, 100% { transform: translateY(0px) rotate(0deg); }
     50% { transform: translateY(-30px) rotate(10deg); }
+}
+
+@keyframes quoteFloat {
+    0%, 90%, 100% { opacity: 0; transform: translateY(20px); }
+    10%, 80% { opacity: 1; transform: translateY(0px); }
 }
 
 .hero-content {
