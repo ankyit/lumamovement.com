@@ -118,6 +118,14 @@ p{
     padding-top: 0;
     padding-bottom: 0;
 }
+.navbar-brand img {
+    height: 50px;
+    width: auto;
+}
+.footer_logo img {
+    height: 40px;
+    width: auto;
+}
 .navbar-nav {
     padding-left: 220px;
 }
