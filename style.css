@@ -48,11 +48,8 @@ nav {
 }
 
 .logo {
-    font-family: 'Playfair Display', serif;
-    font-size: 2rem;
-    font-weight: 600;
-    color: var(--gold);
-    letter-spacing: 2px;
+    height: 50px;
+    width: auto;
 }
 
 nav ul {
@@ -427,7 +424,8 @@ footer {
 }
 
 .footer-brand .logo {
-    color: var(--gold);
+    height: 40px;
+    width: auto;
     margin-bottom: 1rem;
 }
 
