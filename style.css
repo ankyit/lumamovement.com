@@ -84,21 +84,7 @@ nav a:hover {
     position: relative;
 }
 
-.hero::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: 
-        radial-gradient(circle at 20% 30%, rgba(255,255,255,0.1) 1px, transparent 1px),
-        radial-gradient(circle at 80% 70%, rgba(255,255,255,0.08) 2px, transparent 2px),
-        radial-gradient(circle at 60% 20%, rgba(255,255,255,0.06) 1px, transparent 1px),
-        radial-gradient(circle at 30% 80%, rgba(255,255,255,0.05) 1px, transparent 1px);
-    background-size: 80px 80px, 120px 120px, 100px 100px, 60px 60px;
-    animation: gentleFloat 25s ease-in-out infinite;
-}
+
 
 .hero::after {
     content: '';
@@ -112,10 +98,7 @@ nav a:hover {
 
 
 
-@keyframes gentleFloat {
-    0%, 100% { transform: translateY(0px); }
-    50% { transform: translateY(-10px); }
-}
+
 
 @keyframes yogaFloat2 {
     0%, 100% { transform: translateY(0px) rotate(0deg); }
