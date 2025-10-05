@@ -75,7 +75,9 @@ nav a:hover {
 /* Hero Section */
 .hero {
     height: 100vh;
-    background: #D4AF37;
+    background: linear-gradient(rgba(212, 175, 55, 0.7), rgba(212, 175, 55, 0.7)), url('hero/Etheral Gradients (1).jpg');
+    background-size: cover;
+    background-position: center;
     display: flex;
     align-items: center;
     justify-content: center;
